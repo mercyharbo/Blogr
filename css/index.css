@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-family: 'Overpass', sans-serif;
+  overflow-y: hidden;
+}
+
+header {
+  background-image: url(../images/bg-pattern-intro.svg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: hsl(353, 100%, 62%);
+  height: auto;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 2;
+  border-bottom-left-radius: 60px;
+}
+
+.navbar {
+  padding: 2% 5%;
+}
+
+.setup-btn {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links:hover {
+  color: rgb(206, 186, 186);
+}
+
+.platform {
+  padding: 5% 0;
+  width: 100%;
+}
+
+.platform-btn {
+  border: 0;
+  padding: 10px 2%;
+  border-radius: 30px;
+}
+
+.header-btn {
+  padding: 1% 0;
+}
+
+.start-btn:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.learn-btn {
+  background: transparent;
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  margin-left: 10px;
+}
+
+.learn-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mobile-bg {
+    display: none;
+}
+.grey {
+  color: hsl(207, 13%, 34%);
+}
+
+.grey-opacity {
+  color: rgba(245, 245, 245, 0.596);
+}
+
+.future {
+  padding: 5% 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.editor {
+  padding: 5% 0;
+}
+
+.editor-img {
+  position: absolute;
+  right: -12%;
+  top: 50px;
+  z-index: 1;
+  width: 600px;
+}
+
+.Art {
+  padding: 3% 5%;
+  background-color: hsl(237, 17%, 21%);
+  color: white;
+  position: relative;
+  margin: 5% 0;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  line-height: 2;
+}
+
+.phone-img {
+  width: 300px;
+  position: absolute;
+  top: -30%;
+  left: 5%;
+  z-index: 2;
+}
+
+h1, h3, h5 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.art-text {
+  width: 40%;
+  margin-left: auto;
+}
+
+.simple {
+  padding: 10% 5%;
+  line-height: 2;
+  position: relative;
+}
+
+.laptop {
+  position: absolute;
+  width: 700px;
+  top: 0;
+  left: -15%;
+}
+
+.onMobile-laptop {
+    display: none;
+}
+
+.inner-simple {
+  padding: 1% 0;
+}
+
+.inner-simple-wrapper {
+  margin-left: 40%;
+}
+
+.footer {
+  padding: 5% 5% 0 5%;
+  background: hsl(240, 10%, 16%);
+  color: hsl(240, 2%, 79%);
+  border-top-right-radius: 50px;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 3% 0;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(207, 13%, 34%);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-size: auto;
+        width: 100%;
+    }
+
+    .setup-btn {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .links  {
+        margin: 5% 0;
+    }
+
+    .platform {
+        width: 100%;
+        padding: 10%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .grey-opacity {
+        font-size: 20px;
+    }
+
+    .platform-btn {
+        padding: 2% 6%;
+    }
+
+    .future-heading {
+        padding-top: 10%;
+    }
+
+    .future {
+        padding-bottom: 60%;
+    }
+
+    .editor {
+        padding: 10% 0;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .editor-img {
+        display: none;
+    }
+
+    .mobile-bg {
+        display: initial;
+    }
+
+    .editor-headings {
+        font-size: 25px;
+    }
+
+    .grey {
+        padding-top: 30px;
+    }
+
+    .art-text {
+        padding: 50% 0 50px 0;
+        text-align: center;
+    }
+
+    .art-text h4 {
+        font-size: 3rem;
+        padding-bottom: 5%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .phone-img {
+        width: 400px;
+        left: 0;
+        top: -32%;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .onMobile-laptop {
+        display: initial;
+        width: 100%;
+    }
+
+    .inner-simple-wrapper {
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .inner-simple h4 {
+        padding: 10% 0;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 15% 0 5% 0;
+    }
+
+    .footer-divs {
+        padding: 10% 0;
+        font-size: 1.5rem;
+    }
+}
